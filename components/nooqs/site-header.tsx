@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X, Search, User } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
@@ -47,22 +46,28 @@ export function SiteHeader() {
 
           {/* Desktop actions */}
           <div className="hidden lg:flex items-center gap-sm">
-            <Button
-              variant="ghost"
-              size="sm"
-              icon={<Search size={18} />}
-              onClick={() => (window.location.href = '/search')}
+            <Link
+              href="/search"
+              className={cn(
+                'inline-flex items-center gap-2 h-8 px-3 rounded font-semibold text-label-sm',
+                'text-on-surface hover:bg-surface-container-high transition-colors duration-fast',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
+              )}
             >
+              <Search size={18} />
               Search
-            </Button>
-            <Button
-              variant="secondary"
-              size="sm"
-              icon={<User size={18} />}
-              onClick={() => (window.location.href = '/sign-in')}
+            </Link>
+            <Link
+              href="/sign-in"
+              className={cn(
+                'inline-flex items-center gap-2 h-8 px-3 rounded font-semibold text-label-sm',
+                'text-secondary border border-secondary hover:bg-secondary-container/20 transition-colors duration-fast',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
+              )}
             >
+              <User size={18} />
               Sign in
-            </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
