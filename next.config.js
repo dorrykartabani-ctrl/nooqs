@@ -19,6 +19,7 @@ const nextConfig = {
       bodySizeLimit: '10mb',
     },
   },
+  staticPageGenerationTimeout: 180,
 };
 
 module.exports = withPWA({
