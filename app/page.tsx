@@ -4,7 +4,6 @@ import { SiteHeader } from '@/components/nooqs/site-header';
 import { SiteFooter } from '@/components/nooqs/site-footer';
 import { PurposeSelector } from '@/components/nooqs/purpose-selector';
 import { HowItWorks } from '@/components/nooqs/how-it-works';
-import { Button } from '@/components/ui/button';
 import { Chip } from '@/components/ui/chip';
 
 export default function Home() {
@@ -41,7 +40,7 @@ export default function Home() {
           <div className="flex justify-center mt-md">
             <Link
               href="/search"
-              className="inline-flex items-center gap-2 h-10 px-4 rounded text-label-md font-semibold text-on-surface hover:bg-surface-container-high transition-colors duration-fast focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              className="inline-flex items-center gap-2 h-10 px-4 rounded text-label-md font-semibold text-on-surface hover:bg-surface-container-high transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
             >
               Browse all Nooqs
               <ArrowRight size={18} />
@@ -92,7 +91,7 @@ export default function Home() {
         <section className="container-nooqs py-lg">
           <div className="rounded-lg bg-primary p-lg md:p-xl text-center">
             <h2 className="text-headline-lg text-on-primary mb-sm">
-              Have a space that's sitting empty?
+              Have a space that&apos;s sitting empty?
             </h2>
             <p className="text-body-lg text-inverse-on-surface/90 max-w-2xl mx-auto mb-md">
               Turn your unused garage, garden, studio, meeting room, or forecourt
@@ -101,14 +100,14 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-sm">
               <Link
                 href="/host"
-                className="inline-flex items-center gap-2 h-12 px-6 rounded font-semibold text-body-md bg-available-strong text-on-available-strong hover:bg-tertiary transition-colors duration-fast focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-available focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+                className="inline-flex items-center gap-2 h-12 px-6 rounded font-semibold text-body-md bg-available-strong text-on-available-strong hover:bg-tertiary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-available focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
               >
                 Become a host
                 <ArrowRight size={18} />
               </Link>
               <Link
                 href="/host/councils"
-                className="inline-flex items-center gap-2 h-12 px-6 rounded font-semibold text-body-md text-on-primary hover:bg-primary-container/40 transition-colors duration-fast focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-on-primary focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+                className="inline-flex items-center gap-2 h-12 px-6 rounded font-semibold text-body-md text-on-primary hover:bg-primary-container/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-on-primary focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
               >
                 For councils and businesses
               </Link>
