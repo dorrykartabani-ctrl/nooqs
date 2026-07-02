@@ -21,6 +21,29 @@ Read both before making product or design decisions.
 - **Validation:** Zod
 - **Forms:** React Hook Form + Zod resolvers
 - **Deployment:** Vercel
+- **PWA:** @ducanh2912/next-pwa (installable, offline-capable, push-notification-ready)
+
+## PWA capabilities
+
+Nooqs is a Progressive Web App:
+- Installable on iOS, Android, Windows, macOS, Linux
+- Runs full-screen without browser chrome once installed
+- Push notifications supported on Android and iOS 16.4+
+- Service worker caches static assets for faster repeat visits
+- Offline support for basic navigation (extended offline coming in Slice 2)
+
+To install: visit the URL and use your browser's "Install" or "Add to Home Screen" option.
+
+Service worker is disabled in development. To test PWA behaviour locally:
+
+```bash
+npm run build
+npm run start
+
+
+### Update `docs/strategy.md`
+
+Under §13 Phased Rollout → Phase 1 → change:
 
 ## Prerequisites
 
