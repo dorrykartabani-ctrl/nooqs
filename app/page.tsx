@@ -39,15 +39,13 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center mt-md">
-            <Button
-              variant="ghost"
-              size="md"
-              icon={<ArrowRight size={18} />}
-              iconPosition="right"
-              onClick={() => (window.location.href = '/search')}
+            <Link
+              href="/search"
+              className="inline-flex items-center gap-2 h-10 px-4 rounded text-label-md font-semibold text-on-surface hover:bg-surface-container-high transition-colors duration-fast focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
             >
               Browse all Nooqs
-            </Button>
+              <ArrowRight size={18} />
+            </Link>
           </div>
         </section>
 
@@ -101,20 +99,18 @@ export default function Home() {
               into income. Nooqs makes it simple to list, manage, and get paid.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-sm">
-              <Link href="/host">
-                <Button
-                  variant="available"
-                  size="lg"
-                  icon={<ArrowRight size={18} />}
-                  iconPosition="right"
-                >
-                  Become a host
-                </Button>
+              <Link
+                href="/host"
+                className="inline-flex items-center gap-2 h-12 px-6 rounded font-semibold text-body-md bg-available-strong text-on-available-strong hover:bg-tertiary transition-colors duration-fast focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-available focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+              >
+                Become a host
+                <ArrowRight size={18} />
               </Link>
-              <Link href="/host/councils">
-                <Button variant="ghost" size="lg" className="text-on-primary hover:bg-primary-container/40">
-                  For councils and businesses
-                </Button>
+              <Link
+                href="/host/councils"
+                className="inline-flex items-center gap-2 h-12 px-6 rounded font-semibold text-body-md text-on-primary hover:bg-primary-container/40 transition-colors duration-fast focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-on-primary focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+              >
+                For councils and businesses
               </Link>
             </div>
           </div>
